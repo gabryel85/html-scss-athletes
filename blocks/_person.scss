@@ -1,0 +1,75 @@
+.person {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease;
+  cursor: pointer;
+
+  &__photo {
+    position: relative;
+  }
+
+  &__img {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+    transition: 1s all ease;
+  }
+
+  &__rank {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #8B0000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 84px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F4F4F;
+  }
+
+  &__extra {
+    visibility: hidden;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: 1s all ease;
+  }
+
+  &:hover {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    position: relative;
+    transform: scale(132%);
+    position: relative;
+    z-index: 1;
+    
+    .person__extra {
+      visibility: initial;
+    }
+
+    .person__img {
+      border-radius: 60px;
+    }
+  }
+}
