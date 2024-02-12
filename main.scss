@@ -1,1 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.people {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 35px;
+    min-width: 500px;
+}
+
+.person {
+    width: 200px;
+
+    &:hover {
+        background-color: #EEEEEE;
+        border-radius: 60px;
+    }
+
+    &__photo {
+        position: relative;
+        object-fit: cover;
+
+    }
+
+    &__photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+        &:hover {
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+
+    }
+
+    &__rank {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        background-color: #fff;
+        color: #8B0000;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0;
+
+    }
+
+    &__details {
+
+        &--name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2F4F4F;
+            font-family: Arial;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        &--extra {
+            visibility: hidden;
+            text-align: center;
+
+            &:hover {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .people {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .people {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
