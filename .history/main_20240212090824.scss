@@ -1,0 +1,21 @@
+.people {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.person {
+    &__photo {
+
+        &--img{
+        height: 1fr;
+        width: 1fr;
+        border-radius: 50%;
+        }
+    }
+
+    &__rank {
+        position: absolute;
+        top: 50%;
+    }
+}

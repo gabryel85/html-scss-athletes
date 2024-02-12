@@ -1,0 +1,12 @@
+@use "mixins" as *;
+
+.people {
+    display: grid; 
+    grid-template-columns: repeat(2, 200px);
+    gap: 30px;
+    justify-content: center;
+
+    @include desktop() {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
