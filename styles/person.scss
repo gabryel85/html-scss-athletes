@@ -1,0 +1,78 @@
+.person {
+  height: 231px;
+  width: 200px;
+  transition-duration: 1s;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.rank {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    position: relative;
+    margin-left: 158px;
+    margin-top: -114px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8B0000;
+    align-items: center;
+    justify-content: center;
+}
+.name {
+display: flex;
+position: relative;
+margin-top: 80px;
+align-items: center;
+height: 23px;
+font-family: 'Arial';
+font-size: 20px;
+line-height: 23px;
+color: #2F4F4F;
+
+}
+
+
+.person:hover {
+    .sport {
+        display: flex;
+        display: flex;
+        height: 25.2px;
+        font-family: 'Arial';
+        font-size: 21.6px;
+        color: #000000;
+    }
+    
+    .pay {
+        display: flex;
+        height: 25.2px;
+        font-family: 'Arial';
+        font-size: 21.6px;
+        color: #000000;
+    }
+    animation-delay: 1s;
+    scale: 1.1;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    transform: scale(1.32);
+
+}
+
+.sport {
+display: none;
+
+
+}
+
+.pay {
+display: none;
+}
+
+/* trzeba poprawić, żeby .pay i .sport wyświetlały się w obrębie background
+trzeba wyśrodkować całego grida
+trzeba zrobić tak, żeby zamiast 4 kolumn robiły się 2
+*/
