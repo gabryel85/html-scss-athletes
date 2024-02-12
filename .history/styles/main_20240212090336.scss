@@ -1,0 +1,43 @@
+@import '../styles/utils/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+   
+}
+
+.people {
+    display: grid;
+    padding: 30px 35px;
+    gap: 40px 30px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, $card-width);
+
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+        grid-template-columns: repeat(2, $card-width);
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1499px) {
+        grid-template-columns: repeat(4, $card-width);
+    }
+
+    @media screen and (min-width: 1500px) {
+        grid-template-columns: repeat(4, $card-width);
+    }
+}
+
+.person {
+    height: 231px;
+
+    &__photo {
+        height: 168px;
+        width: 168px;
+        
+    }
+}

@@ -1,0 +1,102 @@
+@import '../styles/utils/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+   
+}
+
+img {
+    border-radius: 200px;
+}
+
+.people {
+    display: grid;
+    padding: 30px 35px;
+    gap: 40px 30px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, $photo-width);
+
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+        grid-template-columns: repeat(2, $photo-width);
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1499px) {
+        grid-template-columns: repeat(4, $photo-width);
+    }
+
+    @media screen and (min-width: 1500px) {
+        grid-template-columns: repeat(4, $photo-width);
+    }
+}
+
+.person {
+    display: flex;
+    height: 231px;
+    width: $photo-width;
+    position: relative;
+    font-family: 'Arial';
+
+    &__photo {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        align-self: center;
+        position: absolute;
+        background-size: contain;
+    }
+
+    &__rank {
+        display: flex;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 158px;
+        top: 84px;
+        background: #FFFFFF;
+        border-radius: 32px;
+     
+    }
+
+    &__number {
+        display: flex;
+        position: absolute;
+        text-align: center;
+        color: #8B0000;
+        font-size: 16px;
+        line-height: 18.4px;
+        left: 17px;
+        top: 91px;
+    }
+
+    &__details {
+        display: flex;
+        position: absolute;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+
+        justify-content: center;
+        align-self: center;
+    }
+
+    &__name {
+        display: flex;
+        position: absolute;
+        margin-top: 8px;
+        font-size: 20px;
+        text-align: center;
+        color: #2F4F4F;
+        top: 208px;
+
+    }
+
+    
+
+}
