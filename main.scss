@@ -1,1 +1,143 @@
+$column-width: 200px;
 
+/* #region  Page Sert*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* #endregion*/
+
+/* #region  Athletes*/
+
+.athletes {
+  display: grid;
+  gap: 40px 30px;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .athletes {
+    grid-template-columns: $column-width $column-width;
+  }
+}
+
+@media (min-width: 1000px) {
+  .athletes {
+    grid-template-columns: $column-width $column-width $column-width $column-width;
+  }
+}
+
+/* #endregion*/
+
+/* #region  Person*/
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 1s;
+}
+
+.person__photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.person__photo_img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.person__rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 10px;
+  top: 84px;
+
+  font-size: 16px;
+  color: rgba(139, 0, 0, 1);
+  font-weight: 700;
+  transition: all 1s;
+
+}
+
+.person__details {
+  padding-top: 8px;
+  display: block;
+  text-align: center;
+  transition: all 1s;
+
+}
+
+.person__name {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgba(47, 79, 79, 1);
+  transition: all 1s;
+
+}
+
+.person__extra {
+  padding-top: 9px;
+  font-size: 18px;
+  line-height: 20.7px;
+  display: none;
+  transition: all 1s;
+
+}
+
+.person:hover {
+  background-color: rgba(238, 238, 238, 1);
+  width: 264px;
+  height: 244.4px;
+  align-items: center;
+  border-radius: 12px;
+
+
+}
+
+.person:hover .person__photo {
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 240px;
+  height: 240px;
+
+}
+
+.person:hover .person__photo_img {
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 240px;
+  height: 240px;
+  border-radius: 60px;
+}
+
+.person:hover .person__name {
+  font-size: 24px;
+}
+
+.person:hover .person__extra {
+  display: block;
+  font-size: 21.6px;
+  line-height: 24.84px;
+}
+/* #endregion*/
