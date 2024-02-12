@@ -1,0 +1,15 @@
+.people {
+  display: grid;
+  gap: 20px 30px;
+  justify-content: center;
+  padding: 30px 35px;
+
+  @media (min-width: 500px) {
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 200px);
+  }
+
+}
