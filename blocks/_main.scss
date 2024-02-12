@@ -1,4 +1,9 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 500px;
+}
+img {
+  width: 200px;
+  border-radius: 50%;
 }
