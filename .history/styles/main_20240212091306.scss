@@ -1,0 +1,106 @@
+@import '../styles/utils/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+   
+}
+
+.people {
+    display: grid;
+    padding: 30px 35px;
+    gap: 40px 30px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, $card-width);
+
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+        grid-template-columns: repeat(2, $card-width);
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1499px) {
+        grid-template-columns: repeat(4, $card-width);
+    }
+
+    @media screen and (min-width: 1500px) {
+        grid-template-columns: repeat(4, $card-width);
+    }
+}
+
+.person {
+    height: 231px;
+    position: relative;
+
+    &__photo {
+        height: 168px;
+        width: 168px;
+        justify-self: center;
+        position: absolute;
+        border-radius: 200px;
+        position: absolute;
+    }
+
+    &__rank {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 193px;
+        top: 114px;
+        background: #FFFFFF;
+    }
+
+    
+
+
+
+
+/* Mayweather */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 35px;
+top: 30px;
+
+background: url(Mayweather.jpg);
+border-radius: 200px;
+
+
+/* Group */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 193px;
+top: 114px;
+
+
+
+/* Ellipse */
+
+
+
+
+/* 1 */
+
+position: absolute;
+width: 9px;
+height: 18px;
+left: 205px;
+top: 121px;
+
+font-family: 'Arial';
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+
+color: #8B0000;
+
+
+    }
+}
