@@ -1,0 +1,11 @@
+.people {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    &__photo {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+}

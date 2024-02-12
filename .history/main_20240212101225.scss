@@ -1,0 +1,95 @@
+@mixin visually-hidden() {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  @mixin desktop() {
+    @media (min-width:1000px) {
+      @content
+    }
+  }
+
+
+.people {
+    display: grid; 
+    grid-template-columns: repeat(2, 200px);
+    gap: 30px;
+    justify-content: center;
+
+    @include desktop() {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+.person {
+    transition: background-color 0.01s;
+    transition: transform 1s ease;
+    
+   
+    &__photo {
+        height: 200px;
+        width: 200px;
+
+        &--img{
+        position: absolute;
+        height: 200px;
+        transition: 1s;
+        border-radius: 50%;
+        }
+        &--rank {
+            position: relative;
+            top: 90px;
+            left: 158px;
+            text-align: center;
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: #FFFFFF;
+            border-radius: 50px;
+            color: #8B0000;
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+
+    &__name {
+        color: #2F4F4F;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 8px;
+        transition: 1s;
+    }
+
+    &__extra {
+        font-family: Arial;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+
+        visibility: hidden;
+    }
+
+    &:hover {
+        background-color: #eeeeee;
+        transform: scale(1.2);
+        border-radius: 12px;
+
+        .person__photo--img {
+            transform: scale(0.9);
+            border-radius: 60px;
+        }
+        .person__extra {
+            visibility: initial;
+        }
+    }
+    
+}
