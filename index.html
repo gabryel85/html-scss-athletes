@@ -1,182 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Highest-Paid Athletes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.scss" />
-</head>
-<body>
-  <main class="people">
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Mayweather.jpg"
-          alt="Floyd Mayweather"
-        >
-        <span class="rank">1</span>
-      </section>
-      <section class="details">
-        <a class="name">Floyd Mayweather</a>
-        <section class="extra">
-          <span class="sport">Boxing</span>
-          <span class="pay">285</span>
+  <head>
+    <title>Highest-Paid Athletes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+  </head>
+  <body class="page">
+    <main class="athletes">
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Mayweather.jpg" alt="Floyd Mayweather" />
+          <span class="athlete-card__rank">1</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Floyd Mayweather</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Boxing,</span>
+            <span class="athlete-card__pay">&nbsp;$285M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Messi.jpg"
-          alt="Lionel Messi"
-        >
-        <span class="rank">2</span>
-      </section>
-      <section class="details">
-        <a class="name">Lionel Messi</a>
-        <section class="extra">
-          <span class="sport">Soccer</span>
-          <span class="pay">111</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Messi.jpg" alt="Lionel Messi" />
+          <span class="athlete-card__rank">2</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Lionel Messi</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Soccer,</span>
+            <span class="athlete-card__pay">&nbsp;$111M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Ronaldo.jpg"
-          alt="Cristiano Ronaldo"
-        >
-        <span class="rank">3</span>
-      </section>
-      <section class="details">
-        <a class="name">Cristiano Ronaldo</a>
-        <section class="extra">
-          <span class="sport">Soccer</span>
-          <span class="pay">108</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Ronaldo.jpg" alt="Cristiano Ronaldo" />
+          <span class="athlete-card__rank">3</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Cristiano Ronaldo</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Soccer,</span>
+            <span class="athlete-card__pay">&nbsp;$108M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/McGregor.jpg"
-          alt="Conor McGregor"
-        >
-        <span class="rank">4</span>
-      </section>
-      <section class="details">
-        <a class="name">Conor McGregor</a>
-        <section class="extra">
-          <span class="sport">Mixed Martial Arts</span>
-          <span class="pay">99</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/McGregor.jpg" alt="Conor McGregor" />
+          <span class="athlete-card__rank">4</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Conor McGregor</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Mixed Martial Arts,</span>
+            <span class="athlete-card__pay">&nbsp;$99M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Neymar.jpg"
-          alt="Neymar"
-        >
-        <span class="rank">5</span>
-      </section>
-      <section class="details">
-        <a class="name">Neymar</a>
-        <section class="extra">
-          <span class="sport">Soccer</span>
-          <span class="pay">90</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Neymar.jpg" alt="Neymar" />
+          <span class="athlete-card__rank">5</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Neymar</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Soccer,</span>
+            <span class="athlete-card__pay">&nbsp;$90M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/James.jpg"
-          alt="LeBron James"
-        >
-        <span class="rank">6</span>
-      </section>
-      <section class="details">
-        <a class="name">LeBron James</a>
-        <section class="extra">
-          <span class="sport">Basketball</span>
-          <span class="pay">85.5</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/James.jpg" alt="LeBron James" />
+          <span class="athlete-card__rank">6</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">LeBron James</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Basketball,</span>
+            <span class="athlete-card__pay">&nbsp;$85.5M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Federer.jpg"
-          alt="Roger Federer"
-        >
-        <span class="rank">7</span>
-      </section>
-      <section class="details">
-        <a class="name">Roger Federer</a>
-        <section class="extra">
-          <span class="sport">Tennis</span>
-          <span class="pay">77.2</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Federer.jpg" alt="Roger Federer" />
+          <span class="athlete-card__rank">7</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Roger Federer</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Tennis,</span>
+            <span class="athlete-card__pay">&nbsp;$77.2M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Curry.jpg"
-          alt="Stephen Curry"
-        >
-        <span class="rank">8</span>
-      </section>
-      <section class="details">
-        <a class="name">Stephen Curry</a>
-        <section class="extra">
-          <span class="sport">Basketball</span>
-          <span class="pay">76.9</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Curry.jpg" alt="Stephen Curry" />
+          <span class="athlete-card__rank">8</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Stephen Curry</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Basketball,</span>
+            <span class="athlete-card__pay">&nbsp;$76.9M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Ryan.jpg"
-          alt="Matt Ryan"
-        >
-        <span class="rank">9</span>
-      </section>
-      <section class="details">
-        <a class="name">Matt Ryan</a>
-        <section class="extra">
-          <span class="sport">Football</span>
-          <span class="pay">67.3</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Ryan.jpg" alt="Matt Ryan" />
+          <span class="athlete-card__rank">9</span>
         </section>
-      </section>
-    </article>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Matt Ryan</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Football,</span>
+            <span class="athlete-card__pay">&nbsp;$67.3M</span>
+          </section>
+        </section>
+      </article>
 
-    <article class="person">
-      <section class="photo">
-        <img
-          src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Stafford.jpg"
-          alt="Matthew Stafford"
-        >
-        <span class="rank">10</span>
-      </section>
-      <section class="details">
-        <a class="name">Matthew Stafford</a>
-        <section class="extra">
-          <span class="sport">Football</span>
-          <span class="pay">59.5</span>
+      <article class="athletes__athlete-card athlete-card">
+        <section class="athlete-card__main-data">
+          <img class="athlete-card__photo" src="https://mate-academy.github.io/fe-program/css/tasks/athletes/people/Stafford.jpg" alt="Matthew Stafford" />
+          <span class="athlete-card__rank">10</span>
         </section>
-      </section>
-    </article>
-  </main>
-</body>
+        <section class="athlete-card__secondary-data">
+          <a class="athlete-card__name">Matthew Stafford</a>
+          <section class="athlete-card__extras">
+            <span class="athlete-card__sport">Football,</span>
+            <span class="athlete-card__pay">&nbsp;$59.5M</span>
+          </section>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>

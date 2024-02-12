@@ -1,0 +1,88 @@
+@use "../utils/mixins.scss" as *;
+
+.athlete-card {
+  transition: scale 1s;
+  padding: 10px 12px;
+  width: fit-content;
+  font-family: Arial;
+
+  &__main-data {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__photo {
+    transition: border-radius 1s;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__rank {
+    display: flex;
+    position: absolute;
+    top: 84px;
+    right: 9px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    color: #8b0000;
+    font-size: 16px;
+  }
+
+  &__secondary-data {
+    margin-top: 8px;
+  }
+
+  &__name {
+    display: block;
+    width: 100%;
+    color: #2f4f4f;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__extras {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+
+    text-align: center;
+  }
+
+  &__sport {
+  }
+
+  &__pay {
+  }
+
+  &:hover {
+    transform-origin: center;
+    scale: 1.2;
+    z-index: 1;
+    transition: scale 1s;
+    border-radius: 12px;
+    background-color: #eeeeee;
+
+    .athlete-card {
+      &__photo {
+        transition: border-radius 1s;
+        border-radius: 60px;
+      }
+
+      &__extras {
+        visibility: visible !important;
+      }
+    }
+  }
+}

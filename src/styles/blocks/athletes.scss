@@ -1,0 +1,16 @@
+@use "../utils/mixins.scss" as *;
+
+.athletes {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: center;
+  gap: 0px 30px;
+  padding: 30px 35px;
+
+  @include break-point {
+    grid-template-columns: repeat(4, 200px);
+  }
+
+  &__athlete-card {
+  }
+}
