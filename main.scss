@@ -11,6 +11,7 @@ body {
   padding-bottom: 155px;
   display: grid;
   grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: min-content;
   gap: 30px 40px;
   justify-content: center;
   align-items: center;
@@ -23,6 +24,7 @@ body {
 .person {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 8px;
 
   transition: transform 1s ease-in-out;
@@ -84,13 +86,14 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    display: none;
+    opacity: 0;
+    transform: translateY(-100px);
   
   }
 
   &:hover {
     background-color: #EEEEEE;
-    transform: scale(1.32) translateY(10px);
+    transform: scale(1.32) translateY(14px);
     z-index: 1;
   }
   
@@ -103,6 +106,7 @@ body {
   }
 
   &:hover &__extra {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
