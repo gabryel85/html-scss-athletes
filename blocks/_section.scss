@@ -3,7 +3,7 @@
   &__rank{
     position: absolute;
     top: 50%;
-    left: 70%;
+    right: 0;
     transform: translate(-50%, -50%);
     display: inline-block;
     width: 32px;
@@ -13,5 +13,6 @@
     text-align: center;
     background-color: white;
     border-radius: 50%;
+    color: #8B0000;
   }
 }

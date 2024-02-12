@@ -1,3 +1,30 @@
 .article {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s linear;
+  transition: transform 0.3s linear 1s;
+  padding: 12px;
+  &:hover{ 
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: transform 0.3s linear 1s;
+    & > section > img {
+      border-radius: 60px;
+      transition: 0.3s linear;
+      transition-delay: 1s;
+    }
+  }
+  &:hover > &__details > .details__extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & * {
+      font-size: 18px;
+      line-height: 21px;
+      visibility: visible;
+    }
+  }
 }

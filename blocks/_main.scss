@@ -1,9 +1,24 @@
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
   width: 500px;
+  column-gap: 30px;
+  row-gap: 40px;
+  padding: 30px 35px;
+  margin: 0 auto;
 }
 img {
   width: 200px;
   border-radius: 50%;
+  margin-bottom: 8px;
+  transition: 0.3s linear;
+  transition: border-radius 0.3s linear 1s;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
