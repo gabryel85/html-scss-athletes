@@ -1,0 +1,11 @@
+@mixin break-point {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
