@@ -1,0 +1,12 @@
+@use '../settings/mixins.scss' as *;
+
+.people {
+    --column-count: 2;
+    grid-template-columns: repeat(var(--column-count), 200px);
+    display: grid;
+    justify-content: center;
+    gap: 40px 30px;
+    @include lg {
+        --column-count: 4;
+    }
+}
