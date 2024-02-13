@@ -1,0 +1,21 @@
+$column-width: 200px;
+
+
+.athletes {
+    display: grid;
+    gap: 40px 30px;
+    justify-content: center;
+  
+    @media (min-width: 500px) {
+      & {
+        grid-template-columns: $column-width $column-width;
+      }
+    }
+  
+    @media (min-width: 1000px) {
+      & {
+        grid-template-columns: $column-width $column-width $column-width $column-width;
+      }
+    }
+  }
+
